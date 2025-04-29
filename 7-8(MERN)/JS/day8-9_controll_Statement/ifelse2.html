@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if else in js 2</title>
+    <style>
+        .imgsize{
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+
+   
+        <select name="city" id="city">
+            <option value="indore">indore</option>
+            <option value="dewas">dewas</option>
+            <option value="ujjain">ujjain</option>
+            <option value="Bhopal">Bhopal</option>
+        </select>
+
+        <button onclick="showInfo()">click</button>
+    
+
+    <div id="root"></div>
+    
+    <script>
+
+    function showInfo(){
+        var value=document.getElementById('city').value;
+        if(value=="indore"){
+            document.getElementById('root').innerHTML="Welcome in indore <br><img src='./indore.jpg' class='imgsize'>"
+            
+            //alert("Welcome in indore");
+        }else if(value=="dewas"){
+            document.getElementById('root').innerHTML="Welcome in dewas<br><img src='./dewas.avif' class='imgsize'>";
+        }else if(value=="ujjain"){
+            document.getElementById('root').innerHTML="Welcome in ujjain";
+        }else if(value=="Bhopal"){
+            document.getElementById('root').innerHTML="Welcome in Bhopal";
+        }
+    }
+
+    </script>
+    
+</body>
+</html>

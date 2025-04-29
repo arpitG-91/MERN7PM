@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <ul id="list">
+        
+    </ul>
+
+    <ul id="arrList"></ul>
+
+    <script>
+
+        let listValue={
+            id:1,
+            name:"Ram sharma",
+            mobile:"+91-8109988772"
+
+        }
+
+        for(let key in listValue){
+            console.log("<li>"+key+":"+listValue[key]+"</li>");
+            document.getElementById('list').innerHTML+="<li>"+key+":"+listValue[key]+"</li>";
+        }
+
+        let myArr=["ram", "rohan","raman","raghav"];
+
+        
+
+        for(let arr of myArr){
+            console.log(arr);
+            document.getElementById('arrList').innerHTML+="<li>"+arr+"</li>";
+        }
+
+    </script>
+    
+</body>
+</html>

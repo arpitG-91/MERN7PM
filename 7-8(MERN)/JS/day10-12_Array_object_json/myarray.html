@@ -1,0 +1,40 @@
+<html lang="en">
+<head>    
+    <title>Array in js</title>
+</head>
+<body>
+    <ul id="osList">
+
+    </ul>
+
+    <script>
+        let OS=["Window XP", "Window 8","Window 10","Window 11","Linux Ubantu","Linux CentOS","Kali linux","Mac OS" ];
+
+        //push() function using inserting element in array after last indexing
+        OS.push("Andriod gellybeens");
+
+        //pop() function using deleting element on  last indexing in array
+        OS.pop();
+        OS.pop();      
+
+        //shift() function using remove new element on 0(first) indexing
+
+        OS.shift();
+
+        //unshift() function using add new element on 0(first) indexing
+
+        OS.unshift("Andriod 11 pro");
+
+        let list="";
+        for(key in OS){
+            //console.log(key+":"+OS[key]);
+            list+="<li>"+key+":"+OS[key]+"</li>";
+        }
+
+        
+        
+        document.getElementById('osList').innerHTML=list;
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date function</title>
+</head>
+<body>
+
+    <script>
+        // let DN=Date.now();
+        // console.log(DN);
+
+        let dt = new Date();
+        console.log(dt);
+
+        let DN=dt.getDate();
+        console.log(DN);
+
+        let DY=dt.getMonth()+1;        
+        console.log(DY);
+
+        let FY=dt.getFullYear();        
+        console.log(FY);
+
+        let FYU=dt.getUTCFullYear();        
+        console.log(FYU);
+
+        let H=dt.getHours();        
+        let M=dt.getMinutes();        
+        let S=dt.getSeconds(); 
+        let Time=H+":"+M+":"+S;       
+        console.log(Time);
+
+        let intervalId = setInterval(() => {
+            for(let i=0;i<2;i++){
+                console.log(Time);
+            }
+            
+        }, 60000);
+
+    </script>
+    
+
+    
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>math function</title>
+</head>
+<body id="bdy">
+    
+
+    <script>
+        let max = Math.max(1, 22, 3,77); 
+        console.log(max);
+
+        let min = Math.min(1, -22, 3,77); 
+        console.log(min);
+
+        let num = 6.177777777;
+        let floored = Math.floor(num); 
+        console.log(floored);
+
+        let num1 = 5.1;
+        let ceiled = Math.ceil(num1); // ceiled is 6
+        console.log(ceiled);
+
+        let r = Math.ceil(Math.random()*255);
+        let g = Math.ceil(Math.random()*255);
+        let b = Math.ceil(Math.random()*255);
+        
+        document.getElementById('bdy').style.background=`rgb(${r},${g},${b})`;
+
+    </script>
+</body>
+</html>

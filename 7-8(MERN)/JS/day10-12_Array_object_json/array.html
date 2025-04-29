@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array in JS</title>
+</head>
+<body>
+    
+    <select name="" id="country">
+
+    </select>
+
+    <script>
+        let countries=["India","pakistan","china","bhutan","myanmar","Afganistan","japan"];
+
+        
+
+        countries.push("korea");
+        countries.push("USA");
+        countries.push("Canada");
+
+        for(let i=1;i<=2;i++){
+            countries.pop();
+            
+        }
+        for(let i=1;i<=2;i++){
+            countries.shift();
+            
+        }
+        countries[0]="Bharat";
+        
+        countries.unshift('Brajil');
+            
+        
+
+        let cont;
+        for(c of countries){
+            cont+=`<option value='${c}'>${c}</option>`;
+        }
+        document.getElementById('country').innerHTML=cont;
+        console.log(countries[4]);
+    </script>
+</body>
+</html>

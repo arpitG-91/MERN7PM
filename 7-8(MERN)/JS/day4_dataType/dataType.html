@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>DataType in JS</title>
+
+</head>
+<body>
+    <button onclick="hello()">click</button>
+</body>
+    <script>
+        //this is number type values
+        {
+            let numVar=25;
+            console.log(numVar);
+
+            numVar=67.89;
+            console.log(numVar);
+        }
+        //console.log(numVar);
+
+        // string datatype values
+        let uname="kishan verma";
+        console.log(uname);
+
+        // boolean
+        //let status=true;
+        let status=prompt("Enter value in boolean : true or false");
+        if(status==true){
+            console.log("value is true");
+        }else{
+            console.log("value is false");
+
+        }
+
+        //undefined dataType
+
+        {
+            let ud;
+            console.log(ud);
+            ud=44;
+            console.log(ud);
+        }
+
+        //null datatype
+        {
+            let empty=null;
+            console.log(empty);
+        }
+
+        //using symbol datatype
+        let symb=Symbol('unique');
+        console.log(symb);
+
+        //BigInt
+        let bi=1234567890123456789012345678901234567890n;
+        console.log(bi);
+
+        //object datatype
+        let info={name:"rohan",age:34,work:"job"};
+        console.log(info);
+        console.log(info.name);
+        console.log(info.age);
+        console.log(info.work);
+
+        //array datatype
+        let myArray=[1,5,"rohan",88];
+        //console.log(myArray[0]);
+        console.log(myArray);
+
+        //function 
+
+        function hello(){
+            console.log("hello student");
+        }
+
+        //date type value
+        let date = new Date();
+        console.log(date);
+        console.log(date.getDate());
+        console.log(date.getFullYear());
+
+        //regExp
+        let regex = /ab+c/;
+        console.log(regex);
+    </script>
+</html>

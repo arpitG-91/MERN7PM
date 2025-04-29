@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="changeFhead()">click</button>
+    <h1 id="fhead" >fhead</h1>
+    <h1 id="shead" >shead</h1>
+    <h1 id="thead" >thead</h1>
+    <h1 class="myclass">class data1</h1>
+    <h1 class="myclass">class data2</h1>
+    <h1 class="myclass">class data3</h1>
+
+    <button onclick="change()">click</button>
+    <button onclick="changeByclass()">changeByclass</button>
+    
+</body>
+<script>
+
+    function changeFhead(){
+        document.getElementById('fhead').style.color="green";
+        document.getElementById('fhead').style.fontSize="55px";
+        document.getElementById('fhead').innerHTML="welcome in universal informatics";
+
+    }
+
+
+
+    function change(){
+        document.getElementById('shead').innerHTML="this is second heading";
+    }
+
+    function changeByclass(){
+        document.getElementsByClassName('myclass')[2].style.color="red";
+    }
+
+    
+</script>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Loop</title>
+</head>
+<body>
+    <select name="" id="year">
+        
+    </select>
+
+    <script>
+        let date=new Date();
+        let currentYear=date.getFullYear();
+        console.log(currentYear);
+
+        let options;
+        for(let a=currentYear;a>=1950;a--){
+            options+="<option>"+a+"</option>";
+        }
+
+        document.getElementById('year').innerHTML=options;
+
+    </script>
+</body>
+</html>

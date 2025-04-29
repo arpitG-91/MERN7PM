@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch case in JS</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    
+    <select name="alphabet" id="myinput">
+        <option value="a">a</option>
+        <option value="b">b</option>
+        <option value="c">c</option>
+        <option value="d">d</option>
+    </select>
+
+    <button onclick="ShowDetails()">Show</button>
+
+    <ul id="root"></ul>
+
+    <script>
+     function ShowDetails(){
+        let inputValue=document.getElementById('myinput').value;
+        console.log(inputValue);
+
+        switch(inputValue){
+            case 'a':
+            value="America";
+            document.getElementById('root').innerHTML="<li>"+value+"</li>";
+            break;
+            case 'b':
+            value="Bangladesh";
+            document.getElementById('root').innerHTML="<li>"+value+"</li>";
+            break;
+            case 'c':
+            value="China";
+            document.getElementById('root').innerHTML="<li>"+value+"</li>";
+            break;
+            case 'd':
+            value="Danmark";
+            document.getElementById('root').innerHTML="<li>"+value+"</li>";
+            break;
+            default:
+            document.getElementById('root').innerHTML="<li>Invalid value</li>";
+            break;            
+        }
+     }
+    </script>   
+</body>
+</html>

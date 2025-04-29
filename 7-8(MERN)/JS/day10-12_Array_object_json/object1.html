@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object in js</title>
+</head>
+<body>
+
+    <script>
+        //object
+        let computerData={
+            name:"HP EliteBook",
+            price:46767,
+            RAM:"16GB",
+            GraphicsCard:"2GB",
+            Processor:"i7 9th Gen",
+            fullDetails:function(){
+                return " name is "+this.name+" and price "+this.price;
+            }
+        }
+
+        computerData.price=47767;
+        console.log(computerData.name);
+        console.log(computerData.price);
+        console.log(computerData.fullDetails());
+
+        let cd=computerData;
+        console.log(cd.RAM);
+    </script>
+    
+</body>
+</html>

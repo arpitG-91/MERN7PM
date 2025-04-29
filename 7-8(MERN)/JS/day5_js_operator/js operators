@@ -1,0 +1,123 @@
+------------JAVASCRIPT OPERATORS---------------
+
+JavaScript operators are essential components that help in manipulating and comparing values. Here's an overview:
+
+==>Arithmetic Operators
+
+=>Addition (+): Adds two values.
+
+
+    let sum = 5 + 3; // 8
+
+=>Subtraction (-): Subtracts one value from another.
+    ->let difference = 10 - 4; // 6
+
+=>Multiplication (*): Multiplies two values.
+
+    ->let product = 6 * 7; // 42
+
+=>Division (/): Divides one value by another.
+    
+    ->let quotient = 20 / 4; // 5
+
+=>Modulus (%): Returns the remainder of a division.
+
+    ->let remainder = 10 % 3; // 1
+
+=>Exponentiation (**): Raises the first value to the power of the second value.
+    ->let power = 2 ** 3; // 8
+
+    --------------------------------------------------
+==>Comparison Operators
+
+=>Equal (==): Checks if two values are equal (type coercion).
+
+    -> 5 == '5'; // true
+
+=>Strict Equal (===): Checks if two values are equal (no type coercion).
+
+    -> 5 === '5'; // false
+
+=>Not Equal (!=): Checks if two values are not equal (type coercion).
+
+    -> 5 != '5'; // false
+
+=>Strict Not Equal (!==): Checks if two values are not equal (no type coercion).
+
+    -> 5 !== '5'; // true
+
+=>Greater Than (>): Checks if the left value is greater than the right value.
+
+    -> 10 > 3; // true
+
+=>Less Than (<): Checks if the left value is less than the right value.
+
+    -> 3 < 10; // true
+
+=>Greater Than or Equal (>=): Checks if the left value is greater than or equal to the right value.
+
+    -> 10 >= 10; // true
+
+=> Less Than or Equal (<=): Checks if the left value is less than or equal to the right value.
+
+    -> 5 <= 6; // true
+
+    ---------------------------------------------------------
+
+==>Logical Operators
+
+=>Logical AND (&&): Returns true if both operands are true.
+
+    ->let result = (5 > 3) && (2 < 4); // true
+
+=>Logical OR (||): Returns true if at least one operand is true.
+    
+    ->let result = (5 > 3) || (2 > 4); // true
+
+=>Logical NOT (!): Returns true if the operand is false.
+
+    ->let result = !(5 > 3); // false
+
+    -------------------------------------------------
+
+==>Assignment Operators
+
+=>Assignment (=): Assigns a value to a variable.
+
+    -> let x = 10;
+
+=>Addition Assignment (+=): Adds a value to a variable.
+
+    ->  x += 5; // x is now 15 
+
+=>Subtraction Assignment (-=): Subtracts a value from a variable.
+
+    -> x -= 3; // x is now 7
+
+=>Multiplication Assignment (*=): Multiplies a variable by a value.
+
+    ->x *= 2; // x is now 20
+
+=>Division Assignment (/=): Divides a variable by a value.
+
+    -> x /= 5; // x is now 4
+
+=>Modulus Assignment (%=): Applies modulus operation and assigns the result to a variable.
+
+    ->x %= 2; // x is now 1
+    -------------------------------------
+
+==>Bitwise Operators
+    ->Bitwise AND (&)
+
+    ->Bitwise OR (|)
+
+    ->Bitwise XOR (^)
+
+    ->Bitwise NOT (~)
+
+    ->Left Shift (<<)
+
+    ->Right Shift (>>)
+
+    ->Zero-fill Right Shift (>>>)

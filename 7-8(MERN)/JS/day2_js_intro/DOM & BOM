@@ -1,0 +1,61 @@
+==>Document Object Model (DOM):
+
+  -The DOM is an API (Application Programming Interface) for manipulating HTML and XML documents.
+
+  -It defines the logical structure of documents and provides a way to create, manipulate, or delete elements within the document.
+
+  -When an HTML file is loaded into the browser, the DOM is created. It represents the same HTML document but in a different format using objects.
+
+  -With the DOM, webpages are represented in a structured hierarchy, allowing easy access and manipulation of tags, IDs, classes, attributes, and elements.
+
+  -Common methods provided by the DOM include:
+    -> getElementById(): Returns elements with a specific ID.
+
+    -> getElementsByClassName(): Returns elements with specified class names.
+
+    -> getElementsByName(): Returns elements by name.
+
+    -> getElementsByTagName(): Returns elements by tag name.
+
+    -> querySelector(): Returns the first element matching a CSS selector.
+
+    -> querySelectorAll(): Returns a collection of child elements matching a CSS selector.
+
+    Example: Fetching an image with a unique ID using getElementById():
+
+
+<!DOCTYPE html>
+<html>
+  <body style="text-align: center;">
+    <div>
+      <h1 style="color: green;">GeeksforGeeks</h1>
+      <p>Click on the button to see the image</p>
+      <img id="image">
+    </div>
+    <button type="button" onclick="show()" id="btnID">Show Image</button>
+    <script>
+      function show() {
+        let image = document.getElementById("image");
+        image.src = "url";
+        
+        document.getElementById("btnID").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
+
+==================================
+
+
+=> Browser Object Model (BOM):
+  -The BOM refers to all the objects exposed by the web browser.
+  -It allows JavaScript to interact with the browser itself.
+  -BOM deals with everything outside the page, including the browser window and the desktop screen.
+  -Common BOM objects include:
+    ->navigator: Provides information about the browser.
+    ->screen: Provides information about the user’s screen.
+    ->location: Represents the current URL.
+    ->history: Manages the browser’s history.
+    ->document: Part of the BOM, it helps manipulate the content of the loaded page (HTML and CSS).
+    
+    In summary, while the DOM focuses on the document’s structure, the BOM deals with browser-specific features and controls.

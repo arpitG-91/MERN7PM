@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>while loop</title>
+</head>
+<body>
+    <select name="day" id="day"></select>
+    <select name="month" id="month"></select>
+
+    <script>
+
+        //while loop
+        let a=1;
+        days=0;
+        while(a<=31){
+            days +="<option value='"+a+"'>"+a+"</option>";
+            a++;
+        }
+        document.getElementById('day').innerHTML=days;
+
+        //do-while loop
+        let m=1;
+        months=0;
+        do{
+            months +="<option value='"+m+"'>"+m+"</option>";
+            m++;
+        }while(m<=12);
+
+        document.getElementById('month').innerHTML=months;
+
+
+    </script>
+</body>
+</html>

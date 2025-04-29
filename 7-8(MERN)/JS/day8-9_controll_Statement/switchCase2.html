@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch case in JS</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <button onclick="ShowDetails()">Show</button>
+    <select name="alphabet" id="myinput">
+        <option value="India">India</option>
+        <option value="USA">USA</option>
+        <option value="Pakistan">Pakistan</option>
+        <option value="Bangladesh">Bangladesh</option>
+    </select>
+
+    
+
+    <select name="contryCode" id="root"></select>
+    <input type="number" name="mobile">
+
+    <script>
+     function ShowDetails(){
+        let inputValue=document.getElementById('myinput').value;
+        console.log(inputValue);
+
+        switch(inputValue){
+            case "India":
+            value="+91";
+            document.getElementById('root').innerHTML="<option>"+value+"</option>";
+            break;
+            case "USA":
+            value="+1";
+            document.getElementById('root').innerHTML="<option>"+value+"</option>";
+            break;
+            case "Pakistan":
+            value="+92";
+            document.getElementById('root').innerHTML="<option>"+value+"</option>";
+            break;
+            case "Bangladesh":
+            value="+88";
+            document.getElementById('root').innerHTML="<option>"+value+"</option>";
+            break;
+            default:
+            document.getElementById('root').innerHTML="<option>Invalid value</option>";
+            break;            
+        }
+     }
+    </script>   
+</body>
+</html>
