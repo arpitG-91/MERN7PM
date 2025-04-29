@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax for get Method</title>
+    <script>
+        function loadData(){
+            //create a new XMLHttpRequest object
+            var xhr= new XMLHttpRequest();
+
+            //configration URL
+            xhr.open('GET','mydata1.txt',true);
+            console.log(xhr);
+            xhr.onload=function(){
+                if(xhr.status===200){
+                    console.log(xhr.responseText);
+                    document.getElementById('mydata').innerHTML=xhr.responseText;
+                }else{
+                    document.getElementById('mydata').innerHTML="Error in Loading Data";
+                }
+            }
+
+            xhr.send();
+        }
+    </script>
+</head>
+<body>
+    <button onclick="loadData()">click</button>
+    <div id="mydata"></div>
+    
+</body>
+</html>

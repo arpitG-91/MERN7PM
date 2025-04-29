@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object in JS</title>
+</head>
+<body>
+    <table id="tblData" border="1">
+
+    </table>
+
+    <script>
+        //create an object
+        let UserInfo={
+            Name:"rohan Sharma",
+            Address:"55 Bhawarkua indore",
+            Mobile:"+91-8767654987",
+            Age:29
+        };
+        console.log(`${UserInfo.Address}`)
+        let tdata="";
+        tdata+=`<tr>`;
+        for(UI in UserInfo){
+            tdata+= `<th>${UI}</th>`;
+            
+        }
+        tdata+=`</tr><br><tr>`;
+        for(UI in UserInfo){
+            tdata+= `<th>${UserInfo[UI]}</th>`;
+            
+        }
+        tdata+=`</tr>`;
+        
+        document.getElementById('tblData').innerHTML=tdata;
+        document.getElementById('tblData').style.background="gray";
+
+    </script>
+</body>
+</html>

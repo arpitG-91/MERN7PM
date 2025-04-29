@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AJAX POST Example</title>
+        <script>
+            function sendData() {
+                var xhr = new XMLHttpRequest();
+
+                // Create POST request to submit data
+                xhr.open('POST', 'submit_data.php', true);
+                xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+
+                // Prepare the data to be sent
+                var data = 'name=' + encodeURIComponent(document.getElementById('name').value);
+
+                // Set up the callback function
+                xhr.onload = function() {
+                    if (xhr.status === 200) {
+                        document.getElementById('response').innerHTML = 'Data submitted successfully!';
+                    } else {
+                        document.getElementById('response').innerHTML = 'Error submitting data';
+                    }
+                };
+
+                // Send the request with data
+                xhr.send(data);
+            }
+        </script>
+    </head>
+    <body>
+        <h2>Submit Data with AJAX</h2>
+        <input type="text" id="name" placeholder="Enter your name">
+        <button onclick="sendData()">Submit</button>
+        <div id="response"></div>
+    </body>
+    </html>

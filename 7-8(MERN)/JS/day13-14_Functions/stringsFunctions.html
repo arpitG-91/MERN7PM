@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string functions</title>
+</head>
+<body>
+    
+
+    <script>
+        let str="we are in indore";
+        console.log(str);
+        //charAt() show index char value
+        console.log(str.charAt(10));
+
+        console.log(str.includes('WE'));
+
+        let str2="we are from indore and i live indore last 5 years";
+        console.log(str2.indexOf('indore'))
+
+
+        let oldstr="we are living in indore last 5 years";
+        let indx=oldstr.indexOf('indore');
+        let newstr=oldstr.slice(indx,indx+25)
+        console.log(newstr);
+        console.log(oldstr);
+        console.log(oldstr.toUpperCase());
+
+
+        let mystr="mohan, sohan, rohan, kishan";
+        console.log(mystr.split(','));
+
+
+    </script>
+    
+</body>
+</html>

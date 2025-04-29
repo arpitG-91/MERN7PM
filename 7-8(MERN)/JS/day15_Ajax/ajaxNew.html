@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX Example</title>
+    <style>
+        #user-container {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>AJAX Example: Fetch User Data</h1>
+    <button id="fetch-button">Fetch User Data</button>
+    <div id="user-container"></div>
+
+    <script>
+        document.getElementById("fetch-button").onclick = function() {
+            // Create a new XMLHttpRequest object
+            var xhr = new XMLHttpRequest();
+            
+            // Configure it: GET-request for the URL
+            xhr.open('GET', 'https://jsonplaceholder.typicode.com/users1', true);
+
+            // Setup what to do when the response is received
+            xhr.onload = function() {
+                if (xhr.status === 200) { // Success status code
+                    var users = JSON.parse(xhr.responseText);
+                    var userContainer = document.getElementById('user-container');
+                    userContainer.innerHTML = ''; // Clear previous data
+
+                    // Loop through the users and create HTML
+                    users.forEach(function(user) {
+                        var userDiv = document.createElement('div');
+                        userDiv.innerHTML = '<strong>' + user.name + '</strong>: ' + user.email;
+                        userContainer.appendChild(userDiv);
+                    });
+                } else {
+                    console.error("Error fetching data: " + xhr.statusText);
+                }
+            };
+
+            // Setup what to do in case of an error
+            xhr.onerror = function() {
+                console.error("Request failed");
+            };
+
+            // Send the request
+            xhr.send();
+        };
+    </script>
+</body>
+</html>

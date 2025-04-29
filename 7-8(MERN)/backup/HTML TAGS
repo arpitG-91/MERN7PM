@@ -1,0 +1,73 @@
+Tags in HTML Tags
+
+0. document tag=> <!DOCTYPE html>,<html>,<head>, 
+					<body>
+
+1. heading tags=> <h1> to <h6>
+
+2. paragraph tags=> <p>, <pre>
+2.1 block tags=> <div>, <span> etc.
+
+3. link tags=> <a>, <link>, <style>, <script>
+
+4. image tag=> <img>
+
+5. table tag=> <table>,<tr>(table row),<th>(table heading), <td>(table data)
+
+6. list tags=> <ul>, <ol>, <li>
+
+7. format tags=> <b>, <i>, <u>, <sub>, <sup>
+
+8. form tags=> <form>, <input>, <textarea>, 
+				<select>, <option>
+
+		->Input Types
+		1.text
+		2.password
+		3.radio 
+		4. checkbox
+		5. button 
+		6. color 
+		7. email 
+		8. file 
+		9. hidden 
+		10. image 
+		11. number
+		12. range 
+		13. search 
+		14. tel 
+		15. time 
+		16. date 
+		17. datetime-local
+		18. week
+		19. month 
+		20 url 
+		21. submit 
+		22. reset
+
+9. 
+
+
+=>HTML5 tags:
+
+	-del, ins, marquee, video, audio, svg, ifream,header,footer,section
+	--------------
+	<video width="320" height="240" controls>
+	  <source src="movie.mp4" type="video/mp4">
+	  <source src="movie.ogg" type="video/ogg">
+	Your browser does not support the video tag.
+	</video>
+	---------------
+	<audio controls autoplay muted>
+	  <source src="horse.ogg" type="audio/ogg">
+	  <source src="horse.mp3" type="audio/mpeg">
+	Your browser does not support the audio element.
+	</audio>
+	--------------
+
+	<svg width="100" height="100">
+	  <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+	</svg>
+	-----------
+	<iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
+	</iframe>

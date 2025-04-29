@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>continue in js</title>
+</head>
+<body>
+
+    <input type="number"  id="starting" placeholder="starting">
+    <input type="number"  id="Ending" placeholder="Ending">
+    <input type="number"  id="continue" placeholder="continue">
+
+    <button onclick="showValues()">show</button>
+
+
+    <ul id="data"></ul>
+
+
+    <script>
+        function showValues(){
+            let starting=document.getElementById('starting').value;
+            let Ending=document.getElementById('Ending').value;
+            let continueValue=document.getElementById('continue').value;
+            console.log(starting);
+            console.log(Ending);
+            console.log(continueValue);
+
+            var val="";
+            // for(let i=starting;i<Ending;i++){
+            //     // if(i==continueValue){
+            //     //     continue;
+            //     // }
+            //     val+="<li>"+i+"</li>";
+            //     console.log("hello");
+                
+            // }
+            let i=starting;
+            while(i<Ending){
+                // if(i==continueValue){
+                //     continue;
+                // }
+                val+="<li>"+i+"</li>";
+                console.log("hello");
+                i++;
+            }
+            console.log(val);
+            document.getElementById('data').innerHTML=val;
+        }
+    </script>
+    
+</body>
+</html>

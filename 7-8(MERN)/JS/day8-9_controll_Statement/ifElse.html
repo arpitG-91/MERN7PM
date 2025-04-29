@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if else in JS</title>
+    <style>
+        .danger{
+            color:red;
+        }
+
+        .success{
+            color:green;
+        }
+        .sndCor{
+            color:rgb(176, 38, 137);
+        }
+        .warning{
+            color:rgb(57, 51, 2);
+        }
+    </style>
+</head>
+<body>   
+
+    
+    <input type="number" id="input" placeholder="Enter student marks">
+    <button onclick="showValues()">click</button>
+
+    <div id="root"></div>
+    <script>
+        function showValues(){
+            var Myinput=document.getElementById('input').value;
+            if(Myinput<=0 || Myinput>100){
+                document.getElementById('root').innerHTML="<h1 class='danger'>Invalid mask for student please try again !!!</h1>";
+            }else if(Myinput>0 && Myinput<33){
+                document.getElementById('root').innerHTML="<h1 class='danger'>Result: Student faild because marks is "+ Myinput+"</h1>";
+            }else if(Myinput>=33 && Myinput<45){
+                document.getElementById('root').innerHTML="<h1 class='warning'>Result: Student passed in 3rd division because marks is "+ Myinput+"</h1>";
+            }else if(Myinput>=45 && Myinput<60){
+                document.getElementById('root').innerHTML="<h1 class='sndCor'>Result: Student passed in 2nd division because marks is "+ Myinput+"</h1>";
+            }else if(Myinput>=60 && Myinput<=100){
+                document.getElementById('root').innerHTML="<h1 class='success'>Result: Student passed in 1st division because marks is "+ Myinput+"</h1>";
+            }else{
+                document.getElementById('root').innerHTML="<h1 class='success'>Somthing went wrong please try again</h1>";
+            }
+            
+        }   
+    </script>
+    
+</body>
+</html>

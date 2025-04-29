@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loops</title>
+</head>
+<body>
+
+    <select id="month">
+        
+    </select>
+    <select id="year">
+        
+    </select>
+    
+    
+
+    <script>
+        //for loop in js
+        for(let i=1;i<12;i++){
+            document.getElementById('month').innerHTML+="<option>"+i+"</option>"
+        }
+
+        let currentyear= new Date().getFullYear();
+        
+        for(let i=currentyear;i>=1900;i--){
+            // document.getElementById('year').innerHTML+="<option value='"+i+"'>"+i+"</option>"
+            document.getElementById('year').innerHTML+=`<option value=${i}>${i}</option>`;
+        }
+
+        // let i = currentyear;
+        // while (i >1995) {
+        //     document.getElementById('year').innerHTML+="<option value='1'>"+i+"</option>"
+        //     i--;
+        // }
+
+        for(let i=0;i<5;i++){
+            console.log("ram '"+i+"'");
+        }
+
+        let i = 50;
+        do {
+            console.log("Iteration " + i);
+            i++;
+        } while (i < 5);
+
+        //for in loop
+
+        //let userInfo={"Id":1001,"name":"Raman","Address":"Indore"}
+        let userInfo={id:1004,name:"Mohan",Address:"Bhopal"};
+        for(let x in userInfo){
+            console.log(x+":"+userInfo[x]);
+        }
+
+        //for of loop
+        let car=["TATA Punch","Maruti k10","mahindra Thar"];
+        for(let x in car){
+            console.log(x+":"+car[x]);
+        }
+
+
+        for(let mycar of car){
+            console.log(mycar);
+        }
+
+        let uinfo={empId:1001,name:"ram",mobile:"+91-8989776756"};
+        // for(let emp of uinfo){
+        //     console.log(emp);
+        // }
+
+    </script>
+</body>
+</html>

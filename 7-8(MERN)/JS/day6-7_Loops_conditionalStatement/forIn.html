@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for in loop</title>
+</head>
+<body>
+        <ul id="udata"></ul>
+
+    <script>
+        let userInfo={name:"Rohan sharma",age:25,location:"indore",mobile:"+91-8767876545",Qualification:"MBA"};
+        
+        let ulData="";
+        for(let key in userInfo){
+            ulData+="<li>"+key+":"+userInfo[key]+"</li>";
+        }
+        document.getElementById('udata').innerHTML=ulData;
+    </script>
+</body>
+</html>

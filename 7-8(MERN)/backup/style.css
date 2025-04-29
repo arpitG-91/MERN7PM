@@ -1,0 +1,31 @@
+/* using tag */
+body{
+    background: #71BBB2;
+}
+
+h1{
+    color: brown;
+}
+
+ol li{
+    color:red;
+}
+
+ul li{
+    color:green;
+}
+
+/* using id */
+#fpara{
+    color:greenyellow
+}
+
+/* using classes */
+
+.bg{
+    background: yellow;
+}
+
+.border{
+    border: 5px solid red;
+}

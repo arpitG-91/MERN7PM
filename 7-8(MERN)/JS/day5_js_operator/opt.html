@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=Operator, initial-scale=1.0">
+    <title>Operator in js</title>
+</head>
+<body >
+<!-- <body onload="arithmeticOperator()"> -->
+    <!--  -->
+    <!-- <p id="plusResult"></p>
+    <p id="minusResult"></p> -->
+
+    <input type="text" id="fvalue" placeholder="fvalue">
+    <input type="text" id="svalue" placeholder="svalue">
+    <input type="text" id="tvalue" placeholder="tvalue">
+    <button onclick="arithmeticOperator()">click</button>
+    <script>
+        function arithmeticOperator(){
+             // arithmetic operator==> +,-,*,/, %,**
+            var a,b,c;
+            // a=prompt("Enter the value of a:","0");
+            // b=prompt("Enter the value of B:","0");
+            a=parseInt(document.getElementById('fvalue').value);
+            b=parseInt(document.getElementById('svalue').value);
+            c=parseInt(document.getElementById('tvalue').value);
+            
+            // for + operator
+            //document.getElementById('plusResult').innerHTML=parseInt(a)+parseInt(b);
+            console.log("+ operator result ="+(a+b));
+
+
+            // for - operator
+            //document.getElementById('minusResult').innerHTML=a-b;
+            console.log("- operator result ="+(a-b));
+
+
+            // for * operator
+            console.log("* operator result ="+a*b);
+
+             // for / operator
+             console.log("/ operator result ="+a/b);
+
+             // for % operator
+             console.log("% operator result ="+a%b);
+
+             // for ** operator
+             console.log("** operator result ="+a**b);
+
+            //comperision operator=>  <,>,<=,>=,==,===,!=,!==
+            if(a<b){
+                console.log("b is greater");
+            }
+
+            if(a<=b){
+                console.log("b is greater or equal");
+
+            }
+            if(a>=b){
+                console.log("a is greater or equal");
+
+            }
+            if(2==='2'){
+                console.log("a and b both are equal");
+
+            }else{
+                console.log('not equal')
+            }
+
+            if(2!=='2'){
+                console.log("true");
+
+            }else{
+                console.log('false');
+            }
+
+            if(a>b && a>c){
+                console.log("a is greater");                
+            }else if(b>a && b>c){
+                console.log("b is greater");             
+
+            }else if(c>a && c>b){
+                console.log("c is greater");             
+
+            }else if(a===b && b===c && c===a){
+                console.log("all are equal");             
+
+            }
+            else{
+                console.log("somthing went wrong");             
+
+            }
+
+            console.log(a);
+            a+=10;
+            console.log("a+=10 =>"+a);
+
+            a-=2;
+            console.log("a-=2 =>"+a);
+
+            a*=2;
+            console.log("a*=2 =>"+a);
+
+            a/=3;
+            console.log("a/=3 =>"+a);
+
+            a%=2;
+            console.log("a%=2 =>"+a);
+
+
+            // Bitwise Operators
+
+            result=a&b;
+            console.log(result);
+
+        }
+
+
+    </script>
+</body>
+</html>
